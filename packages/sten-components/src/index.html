@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <script type="module" src="/build/sten-design-components.esm.js"></script>
+    <script nomodule src="/build/sten-design-components.js"></script>
+    <link rel="stylesheet" href="/build/sten-design-components.css" />
+    <style>
+      .image-container {
+        display: flex;
+      }
+      sten-image {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body sten-theme-mode="dark">
+    <sten-test></sten-test>
+    <sten-icons color="#dd3322"></sten-icons>
+    <div class="image-container">
+      none
+      <sten-image fit="none" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c259411.jpeg"></sten-image>
+      contain
+      <sten-image fit="contain" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"></sten-image>
+      cover
+      <sten-image fit="cover" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"></sten-image>
+      fill
+      <sten-image fit="fill" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"></sten-image>
+      scale-down
+      <sten-image fit="scale-down" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"></sten-image>
+    </div>
+  </body>
+</html>
+<style>
+  .small-size {
+    font-size: 12px;
+  }
+</style>

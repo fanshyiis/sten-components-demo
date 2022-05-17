@@ -1,0 +1,11 @@
+{
+  "packages": ["packages/*"],
+  "command": {
+    "version": {
+      "message": "chore(release): publish"
+    }
+  },
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "version": "independent"
+}
